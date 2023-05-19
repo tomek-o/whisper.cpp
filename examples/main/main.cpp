@@ -405,6 +405,7 @@ bool output_csv(struct whisper_context * ctx, const char * fname) {
 
         //need to multiply times returned from whisper_full_get_segment_t{0,1}() by 10 to get milliseconds.
         fout << 10 * t0 << "," << 10 * t1 << ",\"" << text_escaped    << "\"\n";
+        free(text_escaped);
     }
 
     return true;
