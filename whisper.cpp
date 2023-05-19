@@ -5,10 +5,11 @@
 
 #include "ggml.h"
 
-#include <algorithm>
-#include <cassert>
 #define _USE_MATH_DEFINES
 #include <cmath>
+#include <algorithm>
+#include <cassert>
+#include <cctype>
 #include <cstdio>
 #include <cstring>
 #include <fstream>
